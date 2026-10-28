@@ -24,11 +24,11 @@
 
         <!-- menu -->
         <nav class="nav-menu">
-            <a href="#" class="nav-item active"> Beranda </a>
-            <a href="#" class="nav-item"> Fitur </a>
-            <a href="#" class="nav-item"> Tentang Kami </a>
-            <a href="#" class="nav-item"> Artikel </a>
-            <a href="#" class="nav-item"> Kontak </a>
+            <a href="#beranda" class="nav-item active"> Beranda </a>
+            <a href="#feature" class="nav-item"> Fitur </a>
+            <a href="#tentang-kami" class="nav-item"> Tentang Kami </a>
+            <a href="#artikel" class="nav-item"> Artikel </a>
+            <a href="#kontak" class="nav-item"> Kontak </a>
         </nav>
 
 
@@ -42,7 +42,7 @@
 
     </header>
 
-    <section class="hero">
+    <section class="hero" id="beranda">
         <div class="text-hero">
            
             <span class="badge-hero">
@@ -79,7 +79,7 @@
         </div>
     </section>>
 
-    <section class="fitur">
+    <section class="fitur" id="feature">
         <div class="card">
             <span class="card-icon">
                 <i class="fa-solid fa-person-running" aria-hidden="true"></i>
@@ -177,7 +177,7 @@
         </div>
     </section>
 
-    <section class="about">
+    <section class="about" id="tentang-kami">
         <div class="about-kiri">
             <span class="about-badge">
                 <i class="fa-solid fa-leaf"></i> Tentang Kami
@@ -194,8 +194,12 @@
                         <i class="fa-solid fa-flask-vial"></i>
                     </div>
                     <div class="value-text">
-                        Berbasis Sains & Media
-                        Setiap rekomendasi nutrisi dan rutinitas latihan divalidasi oleh dokter serta ahli gizi tersertifikasi.
+                        <div class="value-title">
+                            Berbasis Sains & Media
+                        </div>
+                        <div class="value-desc">
+                            Setiap rekomendasi nutrisi dan rutinitas latihan divalidasi oleh dokter serta ahli gizi tersertifikasi.
+                        </div>
                     </div>
                 </div>
 
@@ -204,18 +208,28 @@
                         <i class="fa-solid fa-shield-halved"></i>
                     </div>
                     <div class="value-text">
-                        Privasi & keamanan Data
-                        Data kesehatan pribadi Anda dienskripi penuh dan tidak diperjualbelikan kepada pihak ketiga.
+                        <div class="value-title">
+                            Privasi & keamanan Data
+                        </div>
+                        <div class="value-desc">
+                            Data kesehatan pribadi Anda dienskripi penuh dan tidak diperjualbelikan kepada pihak ketiga.
+                        </div>
                     </div>
                 </div>
                                     
                 <div class="value-item">
                     <div class="value-icon">
-                        <i class="fa-solid fa-users"></i>c
+                        <i class="fa-solid fa-users"></i>
                     </div>
                     <div class="value-text">
-                        Komunitas Saling Mendukung
-                        Temukan teman seperjuangan untuk saling berbagi progress dan menyemangati setiap hari.
+                        <div class="value-title">
+                            Komunitas Saling Mendukung
+                        </div>
+                        <div class="value-desc">
+                            Temukan teman seperjuangan untuk saling berbagi progress dan menyemangati setiap hari.
+                        </div>
+                        
+                        
                     </div>
                 </div>
             </div>
@@ -223,9 +237,222 @@
         </div>
 
         <div class="about-kanan">
+            <div class="box-about-kanan">
+                <h2 class="title-about-kanan">
+                    Perjalanan Kita Bersama
+                </h2>
+                <p class="desc-about-kanan">
+                    Sejak diluncurkan, Wellora terus bertumbuh mendampingi puluhan ribu individu mencapai versi terbaik dari diri mereka
+                </p>
 
+                <div class="card-about-kanan">
+                    <div class="card-item">
+                        <div class="card-title">
+                            50K+
+                        </div>
+                        <div class="card-desc">
+                            Pengguna Aktif
+                        </div>
+                    </div>
+                    <div class="card-item">
+                        <div class="card-title">
+                            98%
+                        </div>
+                        <div class="card-desc">
+                            Kepuasan Pengguna
+                        </div>
+                    </div>
+                    <div class="card-item">
+                        <div class="card-title">
+                            120+
+                        </div>
+                        <div class="card-desc">
+                            Pakar Kesehatan
+                        </div>
+                    </div>
+                    <div class="card-item">
+                        <div class="card-title">
+                            4.8 <i class="fa-solid fa-star"></i>
+                        </div>
+                        <div class="card-desc">
+                            Rating Aplikasi
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
+
+    <section class="artikel" id="artikel">
+        <div class="header-artikel">
+            <div class="artikel-badge">
+                <i class="fa-solid fa-book-open"></i> Edukasi & Inspirasi
+            </div>
+
+            <h2>Artikel & Tips gaya hidup sehat Terkini</h2>
+            <p>Peluas wawasan anda seputar nutrisi, tips olahraga praktis, dan manajemen stres untuk menjaga vitalitas sepanjang hari</p>
+        </div> 
+         <div class="card-artikel">
+            <div class="card-item-artikel">
+
+            </div>
+
+            <div class="card-item-artikel">
+                
+            </div>
+
+            <div class="card-item-artikel">
+                
+            </div>
+        </div>
+    </section>
+
+    <section class="hubungi" id="kontak">
+        <div class="header-hubungi">
+            <div class="badge-hubungi">
+                <div class="badge-hubungi-text"><i class="fa-solid fa-headset"></i> Hubungi Kami</div>
+                <h2 class="title-badge-hubungi">Ada pertanyaan? Kami siap membantu</h2>
+                <p class="desc-badge-hubungi">Punya pertanyaan seputar fitur aplikasi Wellora, Kemitraan, atau ingin berkonsultasi? Kirimkan pesan Anda kepada tim kami.</p>
+            </div>
+        </div>
+        <div class="isian-hubungi">
+            <div class="informasi-hubungi">
+                <div class="card-informasi">
+                    <div class="card-informasi-icon">
+                        <i class="fa-solid fa-envelope"></i>
+                    </div>
+
+                    <div class="card-information-text">
+                        <div class="title-c-i-t">
+                            Email Resmi
+                        </div>
+
+                        <div class="desc-c-i-t">
+                            support@wellora.id
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-informasi">
+                    <div class="card-informasi-icon">
+                        <i class="fa-solid fa-phone"></i>
+                    </div>
+
+                    <div class="card-information-text">
+                        <div class="title-c-i-t">
+                            Telepon / WhatsApp
+                        </div>
+
+                        <div class="desc-c-i-t">
+                            +62 821-3456-7890
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-informasi">
+                    <div class="card-informasi-icon">
+                        <i class="fa-solid fa-location-dot"></i>
+                    </div>
+
+                    <div class="card-information-text">
+                        <div class="title-c-i-t">
+                            Alamat Kantor
+                        </div>
+
+                        <div class="desc-c-i-t">
+                            Gedung Wellora Health Center, Jakarta Selatan, Indonesia
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-informasi">
+                    <div class="card-informasi-icon">
+                        <i class="fa-solid fa-clock"></i>
+                    </div>
+
+                    <div class="card-information-text">
+                        <div class="title-c-i-t">
+                            Jam Layanan
+                        </div>
+
+                        <div class="desc-c-i-t">
+                            Senin - Jumat, 08.00 - 17.00 WIB
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="form-hubungi">
+                <h2 class="title-form-hubungi">
+                    Kirim Pesan Langsung
+                </h2>
+                <p class="desc-form-hubungi">
+                    Isi formulir berikut dan tim kami akan membalas dalam 1x24 Jam Kerja
+                </p>
+
+                <div class="textbox-nama">
+                    <h2 class="textbnox-title">
+                        Nama Lengkap
+                    </h2>
+
+                    <input type="text" id="name" placeholder="Masukan Nama Anda" class="textbox">
+                </div>
+                <div class="textbox-nama">
+                    <h2 class="textbnox-title">
+                        Alamat Email
+                    </h2>
+
+                    <input type="text" id="name" placeholder="nama@gmail.com" class="textbox">
+                </div>
+                <div class="textbox-nama">
+                    <h2 class="textbnox-title">
+                        Subjek Pesan
+                    </h2>
+
+                    <input type="text" id="name" placeholder="Contoh: Pertanyaan seputar fitur" class="textbox">
+                </div>
+                <div class="textbox-nama">
+                    <h2 class="textbnox-title">
+                        Pesan Anda
+                    </h2>
+
+                    <input type="text" id="name" placeholder="Tuliskan pesan atau pertanyaan Anda di sini" class="textbox">
+                </div>
+
+                <div class="btn-kirim-pesan">
+                    Kirim Pesan Sekarang <i class="fa-solid fa-paper-plane"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="footer">
+        <div class="title-footer">
+
+        </div>
+
+    </section>
+
+    <button id="btnbacktotop" class="btn-back-to-top">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <script>
+        window.addEventListener('scroll', function () {
+            const btntop = document.getElementById('btnbacktotop');
+
+            if (window.scrollY > 300) {
+                btntop.style.display = 'flex';
+            } else {
+                btntop.style.display = 'none';
+            }
+        });
+
+    function keatashalaman(){
+        window.scrollTo({
+            top: 0, behavior: 'smmooth'
+        })
+    }
+    </script>
 </body>
 
 </html>
