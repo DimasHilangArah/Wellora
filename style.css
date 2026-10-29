@@ -1,8 +1,10 @@
 :root{
-    --warna-hijau-gelap: #12372a;
-    --warna-btn: #2EAD70;
-    --warna-desc: #6e6e6e;
-} 
+    --warna-hijau-gelap : #12372a;
+    --warna-button : #2ead70;
+    --warna-text-desc : #52606d;
+    --size-text-desc : 16px;
+    --size-judul : 48px;
+}
  
  /* reset all */
 *{
@@ -94,7 +96,7 @@ header{
 
 /* hero section */
 
-.hero, .about{
+.hero, .about, .artikel{
     width: 90%;
     max-width: 1300px;
     margin: 0 auto;
@@ -505,33 +507,142 @@ header{
     padding-left: 5px;
 }
 
-.header-hubungi {
+.artikel{
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.artikel-header {
+    width: 90%;
+    max-width: 800px;
+
     align-items: center;
     justify-content: center;
+    margin: auto;
+    margin-top: 60px;
+}
+
+.artikel-judul{
+    font-size: 29px;
+    color: var(--warna-hijau-gelap);
+    line-height: 1.2;
     text-align: center;
 }
 
-.badge-hubungi {
-    width: 90%;
-    max-width: 700px;
+.artikel-judul h2 {
+    font-weight: 800;
 }
 
-.title-badge-hubungi {
-    font-size: 40px;
-    font-weight: 1000;
+.artikel-sub-judul {
+    text-align: center;
+}
+
+.artikel-desc{
+    font-size: 18px;
+    color: var(--warna-desc);
+    text-align: center;
+}
+
+.artikel-card{
+    background-color: white;
+    border-radius: 24px;
+    border: 1px solid #e5e7eb;
+    box-shadow: 0 8px 24px rgba(18, 55, 42, 0.04);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    overflow: hidden;
+
+    width: 350px;
+}
+
+.artikel-card:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 14px 30px rgba(18, 55, 42, 0.08);
+}
+
+.artikel-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+    margin-top: 50px;
+    box-sizing: border-box;
+}
+
+.artikel-img-box{
+    width: 100%;
+    height: 180px;
+    background-color: #e7f7ee;
+    overflow: hidden;
+}
+
+.artikel-img {
+    width: 100%;
+    height: 180px;
+    overflow: hidden;
+    background-color: #e7f7ee;
+    transition: transform 0.3s ease;
+}
+
+.artikel-img:hover{
+    transform: scale(1.06);
+}
+
+.artikel-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 18px;
+}
+
+.artikel-meta {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+    margin-bottom: 12px;
+}
+
+.artikel-elemen{
+    padding: 4px 10px;
+    border: 1px solid #e1f2e8;
+    border-radius: 20px;
+    background: #f1faf4;
+    color: #2aad70;
+    font-size: var(--size-text-desc);
+    font-weight: 500;
+}
+
+.artikel-waktu-membaca {
+    color: var(--warna-text-desc);
+}
+
+.artikel-title{
     color: var(--warna-hijau-gelap);
+    line-height: 1.5;
+    margin-bottom: 10px;
 }
 
-.card-informasi {
-    background-color: #FFFFFF;
-    border: 1px solid #000000;
-    border-radius: 25px;
+.artikel-snippet{
+    color: var(--warna-text-desc);
+    font-size: 15px;
+}
 
-    padding: 10px 20px;
-    margin: 15px;
-
-    width: 550px;
+.artikel-link{
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    margin-top: auto;
+    color: #2aad70;
+    font-size: 12px;
+    font-weight: 700;
+    text-decoration: none;
 }
 
 .btn-back-to-top {
@@ -540,7 +651,7 @@ header{
     right: 30px;
     width: 48px;
     height: 48px;
-    background-color: var(--warna-btn);
+    background-color: var(--warna-button);
     color: white;
     border: none;
     border-radius: 50%;

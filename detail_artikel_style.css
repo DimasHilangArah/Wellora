@@ -1,0 +1,85 @@
+:root{
+    --warna-btn : #2ead70;
+    --warna-judul : #12372a;
+    --warna-desc : #52606d;
+    --size-text-desc : 16px;
+}
+
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8fcf9;
+    color: #1f2933;
+    line-height: 1.6;
+}
+
+.penjelasan{
+    width: 90%;
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+.btn-kembali{
+    width: 200px;
+    height: 35px;
+    background-color: white;
+    color: var(--warna-btn);
+    border: none;
+    border-radius: 25px;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0 6px 18px rgba(46, 173, 112, 0.4);
+    transition: all 0.2s ease;
+}
+
+.artikel{
+    background-color: white;
+    border-radius: 24px;
+    border: 1px solid #e5e7eb;
+    box-shadow: 0 8px 24px rgba(18, 55, 42, 0.04);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    overflow: hidden;
+
+    width: 350px;
+}
+
+.artikel-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 18px;
+}
+
+.artikel-meta {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+    margin-bottom: 12px;
+}
+
+.artikel-elemen{
+    padding: 4px 10px;
+    border: 1px solid #e1f2e8;
+    border-radius: 20px;
+    background: #f1faf4;
+    color: #2aad70;
+    font-size: var(--size-text-desc);
+    font-weight: 500;
+}
+
+.artikel-waktu-membaca {
+    color: var(--warna-text-desc);
+}
+
+.artikel-title{
+    color: var(--warna-hijau-gelap);
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+
+.artikel-snippet{
+    color: var(--warna-text-desc);
+    font-size: 15px;
+}
